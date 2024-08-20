@@ -1,9 +1,10 @@
 <header>
     <section>
         <h1>Youssef Ghollamallah</h1>
-        <p>Développeur web et web mobile</p>
+        <p id="job"></p>
     </section>
     <section>
-        
+        <img id="profilPicture" src="assets/pictures/profil.png" alt="photo" width="200px" >
     </section>
 </header>
+

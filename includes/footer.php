@@ -1,5 +1,5 @@
 <footer>
-    <section>
+    <section id="footer">
         <article id="reseaux">
             <h3>Social Media</h3>
             <ul>
