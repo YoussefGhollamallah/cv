@@ -1,15 +1,47 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
    
 }
 
+/* STYLE GENERAL */
+
+
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #ECF0F1;
+}
+
+/* footer */
+
 .reseaux  {
     width: 50px;
     height: auto;
+
 }
 
+footer{
+    background-color:#ECF0F1 ;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+}
 #reseaux ul {
+    padding-top: 5px;
     list-style: none;
+    display: flex;
+    gap: 10px;
+    
 }
