@@ -7,7 +7,18 @@
 
 /* STYLE GENERAL */
 
+body {
+    background-color: azure;
+}
 
+h2 {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
 
 /* header */
 header {
@@ -21,6 +32,7 @@ header {
 
 #header {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -31,6 +43,56 @@ header {
     gap: 10px;
     list-style: none;
 }
+
+/* MAIN */
+
+#aboutTitle, #titleExperience, #titleSkills {
+    padding-bottom: 10px;
+}
+
+/* ABOUT */
+
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SKILL */
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#linkIcon {
+    display: flex;
+    max-width: 1080px;
+    list-style: none;
+    gap: 50px;
+    align-content: center;
+    align-items: center;
+}
+
+#linkIcon li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icon {
+    width: 60px;
+}
+
+/* ------- */
+
+
 
 /* footer */
 
@@ -57,4 +119,13 @@ footer{
     display: flex;
     gap: 10px;
     
+}
+
+
+/* SCREEN PHONE */
+
+@media only screen and ( max-width: 600px) {
+    #artprofil {
+        display: none;
+    }
 }
