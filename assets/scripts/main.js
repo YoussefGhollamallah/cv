@@ -7,5 +7,8 @@ about.innerText = "à propos.".toUpperCase();
 let experienceTitle = document.getElementById("titleExperience")
 experienceTitle.innerText = "expériences".toUpperCase();
 
+let formationTitle = document.getElementById("titleFormation")
+formationTitle.innerText = "formations".toUpperCase();
+
 let skillTitle = document.getElementById("titleSkills")
-skilleTitle.innerText = "skills".toUpperCase();
+skillTitle.innerText = "skills".toUpperCase();
