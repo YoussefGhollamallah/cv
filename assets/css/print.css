@@ -1,0 +1,102 @@
+/* CSS pour l'impression */
+@media print {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    body {
+        background-color: white;
+        font-size: 12pt;
+        color: black;
+    }
+
+    header, footer {
+        background-color: white;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    h1, h2, h3 {
+        color: black;
+    }
+
+    h1 {
+        font-size: 18pt;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 16pt;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+
+    h3 {
+        font-size: 14pt;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+
+    /* Empêcher les chevauchements et éviter que les éléments soient coupés entre deux pages */
+    #formations article, 
+    #skill article, 
+    .ardesign,
+    #about, 
+    #skills, 
+    #experiences {
+        page-break-inside: avoid;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid black;
+        page-break-after: auto;
+    }
+
+    /* Optimisation des sections principales */
+    #formations, 
+    #skills, 
+    #experiences {
+        display: block;
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+
+    /* Montrer les icônes pour l'impression */
+    .linkIcon, 
+    .icon, 
+    #reseaux, 
+    #navlink {
+        display: flex;
+        justify-content: center; /* Centrer les icônes pour une meilleure présentation */
+        margin: 10px 0;
+    }
+
+    /* Ajustement des icônes */
+    .icon {
+        width: 50px; /* Ajuster la taille pour l'impression */
+        height: auto;
+    }
+
+    hr {
+        width: 100%;
+        border: 0;
+        border-top: 1px solid black;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    /* Gestion des sauts de page */
+    main > section {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        margin: 20mm;
+    }
+}
